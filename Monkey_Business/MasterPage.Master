@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Monkey_Business.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>EASiBOOK by Monkey Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--Menu at the top of the site-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <asp:HyperLink ID="homePageURL" runat="server" CssClass="navbar-brand" NavigateUrl="~/Default.aspx">EASiBOOK</asp:HyperLink>
+                <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li <asp:Literal ID="litAboutUs" runat="server"></asp:Literal>><asp:HyperLink ID="aboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">Home</asp:HyperLink></li>
+                        <li <asp:Literal ID="litHome" runat="server"></asp:Literal>><asp:HyperLink ID="homeURL" runat="server" NavigateUrl="~/Default.aspx">Dashboard</asp:HyperLink></li>
+                        <li class="dropdown <asp:Literal ID="litProfile" runat="server"></asp:Literal>">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><asp:HyperLink ID="profileURL" runat="server" NavigateUrl="~/Login.aspx">View Profile</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="updateProfileURL" runat="server" NavigateUrl="~/Login.aspx">Update Profile</asp:HyperLink></li>
+                            </ul>
+                        </li>
+                        <li <asp:Literal ID="litContactUs" runat="server"></asp:Literal>><asp:HyperLink ID="contactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+                        <li <asp:Literal ID="litFaq" runat="server"></asp:Literal>><asp:HyperLink ID="faqURL" runat="server" NavigateUrl="~/Faq.aspx">FAQs</asp:HyperLink></li>
+                        <li <asp:Literal ID="litRegister" runat="server"></asp:Literal>><asp:HyperLink ID="registerURL" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></li>
+                        <li <asp:Literal ID="litLogin" runat="server"></asp:Literal>><asp:HyperLink ID="loginURL" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!--Menu ends here-->
+            <br /><br /><br />
+            <!--Content starts here-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--Content ends here-->
+            <br /><br />
+        </div>
+
+        <!--Footer-->
+        <%--<div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text">Powered by Monkey Business</p>
+            </div>
+        </div>--%>
+    </form>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.tablesorter.js"></script>
+    <script src="js/tables.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+</body>
+</html>

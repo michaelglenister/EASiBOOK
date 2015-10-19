@@ -1,0 +1,159 @@
+body {
+
+ }
+
+th:hover{
+    cursor: pointer;
+}
+
+.btnlogin {
+    padding: 6px 44px;
+}
+
+.btnHome {
+    border-radius: 8px;
+}
+
+.mandatory-field {
+    color:red;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.register {
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .register td {
+        padding: 4px;
+    }
+
+    .register .column1 {
+        /*width:45%;*/
+        text-align:left;
+    }
+
+    .register .column2 {
+        /*width: 55%;*/
+        text-align:left;
+    }
+
+    .register .btnColumn {
+        text-align:right;
+    }
+
+    .register .validatorColumn {
+        text-align:center;
+    }
+
+.required-field {
+    border: 1px solid red;
+}
+
+.availabilityTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .availabilityTable td {
+    padding: 5px;
+    }
+
+    .availabilityTable .column1 {
+        width:200px;
+        text-align:left;
+        font-weight:bolder;
+    }
+
+    .availabilityTable .column2 {
+        text-align:left;
+    }
+
+    .availabilityTable .btnColumn {
+        text-align:right;
+    }
+
+.availabilityDiv {
+    width:600px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displayAvailabilityTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .displayAvailabilityTable td {
+    padding: 5px;
+    }
+
+    .displayAvailabilityTable .column1 {
+        width:200px;
+        text-align:left;
+        font-weight:bolder;
+    }
+
+    .displayAvailabilityTable .column2 {
+        text-align:left;
+    }
+
+    .displayAvailabilityTable .btnColumn {
+        text-align:center;
+    }
+
+.btnBookRooms {
+    padding: 2px 10px;
+}
+
+.btnNewCustomer {
+    padding: 6px 44px;
+}
+.btnExistingCustomer {
+    padding: 6px 34px;
+}
+
+.btnViewInvoice {
+    padding: 6px 50px;
+}
+
+.table-spacing {
+    width: 100%;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.provisionalBookings td {
+    padding:5px;
+    text-align: left;
+}
+
+.viewBooking {
+    height:30px;
+}
+
+.bookingTable td {
+    padding:5px;
+    text-align:left;
+}
+
+.confirmTable td {
+    padding:10px;
+}
+
+#invoiceInfo td {
+    padding:2px;
+    text-align:left;
+}
+
+#tblInvoice td {
+    padding:5px;
+}
+
+#invoiceHeader{
+    font-weight: bold;
+}
